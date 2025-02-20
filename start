@@ -55,7 +55,7 @@ setup_bot() {
         echo -e "${green}Node.js is already installed, skipping...${neutral}"
     fi
 
-    if [ ! -f /root/BotVPN/app.js ]; then
+    if [ ! -f /root/botvpnsell/app.js ]; then
         git clone https://github.com/joytun21/botvpnsell.git /root/botvpnsell
     fi
 
