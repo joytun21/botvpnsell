@@ -149,7 +149,7 @@ async function sendMainMenu(ctx) {
   }
 
   const messageText = `*Selamat datang di ${NAMA_STORE},
-Powered by GERHANAVPN* 🚀
+Powered by GERHANATUNNEL* 🍂
 Bot VPN serba otomatis untuk membeli
 layanan VPN dengan mudah dan cepat
 Nikmati kemudahan dan kecepatan
