@@ -103,7 +103,7 @@ server_app() {
             echo -e "${red}Nama keypaydisini tidak boleh kosong. Silakan coba lagi.${neutral}"
         fi
     done
-    rm -f /root/BotVPN/.vars.json
+    rm -f /root/botvpnsell/.vars.json
     echo "{
   \"BOT_TOKEN\": \"$token\",
   \"USER_ID\": \"$adminid\",
