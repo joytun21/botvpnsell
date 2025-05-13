@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Colors
-green="\e[38;5;82m"
+green="\e[38;5;87m"
 red="\e[38;5;196m"
 neutral="\e[0m"
-orange="\e[38;5;130m"
-blue="\e[38;5;39m"
+blue="\e[38;5;130m"
+orange="\e[38;5;99m"
 yellow="\e[38;5;226m"
 purple="\e[38;5;141m"
 bold_white="\e[1;37m"
-reset="\e[0m"
+normal="\e[0m"
 pink="\e[38;5;205m"
 print_rainbow() {
     local text="$1"
@@ -48,7 +48,7 @@ cek_status() {
 
 setup_bot() {
     if ! dpkg -s nodejs >/dev/null 2>&1; then
-        curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - || echo -e "${red}Failed to download Node.js setup${neutral}"
+        curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash - || echo -e "${red}Failed to download Node.js setup${neutral}"
         apt-get install -y nodejs || echo -e "${red}Failed to install Node.js${neutral}"
         npm install -g npm@latest
     else
